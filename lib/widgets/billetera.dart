@@ -34,7 +34,14 @@ class Billetera extends StatelessWidget {
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [Text("  Total", style: TextStyle(color: Colors.white, fontSize: 15)), Text("  \$7000", style: TextStyle(color: Colors.white, fontSize: 15))],
+                        children: [
+                          Text("  Total",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 15,
+                              )),
+                          Text("  \$7.000.000,00", style: TextStyle(color: Colors.white, fontSize: 15, fontStyle: FontStyle.italic))
+                        ],
                       ),
                     ],
                   ))),
@@ -63,6 +70,26 @@ class Billetera extends StatelessWidget {
                       ),
                     ],
                   ))),
+          //Tercer banner
+          Positioned(
+              top: 250.0,
+              left: 50.0,
+              width: MediaQuery.of(context).size.width - 100,
+              height: 100,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(20.0),
+                ),
+                child: const Column(
+                  children: [
+                    Text(
+                      "Movimientos Recientes",
+                      style: TextStyle(color: Colors.black),
+                    )
+                  ],
+                ),
+              )),
         ],
       ),
     );
