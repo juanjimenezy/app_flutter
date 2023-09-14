@@ -78,13 +78,53 @@ class Billetera extends StatelessWidget {
               height: 100,
               child: Container(
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: const Color.fromARGB(255, 228, 225, 225),
                   borderRadius: BorderRadius.circular(20.0),
                 ),
                 child: const Column(
                   children: [
                     Text(
                       "Movimientos Recientes",
+                      style: TextStyle(color: Colors.black),
+                    )
+                  ],
+                ),
+              )),
+          //Banners de detalle movimientos 1
+          Positioned(
+              top: 280.0,
+              left: 80.0,
+              width: MediaQuery.of(context).size.width - 140,
+              height: 20,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 188, 136, 255),
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: const Column(
+                  children: [
+                    Text(
+                      "Bazar donde sanya                   \$10",
+                      style: TextStyle(color: Colors.black),
+                    )
+                  ],
+                ),
+              )),
+          //Banners de detalle movimientos 2
+          Positioned(
+              top: 310.0,
+              left: 80.0,
+              width: MediaQuery.of(context).size.width - 140,
+              height: 20,
+              child: Container(
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 188, 136, 255),
+                  borderRadius: BorderRadius.circular(0.0),
+                ),
+                child: const Column(
+                  children: [
+                    Text(
+                      "Pizza                                           \$20",
                       style: TextStyle(color: Colors.black),
                     )
                   ],
